@@ -1,0 +1,50 @@
+body {
+background-image: url(../img/back.png);
+
+}
+
+.page {
+	width: 1000px;
+	height: 900px;
+	padding: 11px 0px 0px 0px;
+  margin: auto;
+  background: #ffffff;
+	border-left: 2px solid #dbdbdb;
+	border-right: 2px solid #dbdbdb;
+	position: relative;
+}
+
+.logo {
+	float: left;
+}
+
+.cont_coun {
+	float: right;
+	display: block;
+
+}
+
+.contact {
+display: block;
+float: right;
+color: #128aa7;
+padding: 0px 40px;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.countries {
+	display: inline-block;
+	position: absolute;
+	top: 100px;
+	right: 40px;
+}
+
+.photo {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}

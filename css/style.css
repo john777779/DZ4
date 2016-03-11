@@ -1,16 +1,18 @@
 body {
-background-image: url(../img/back.png);
+background: url(../img/back.png);
+background-repeat: repeat-x;;
+background-color: #0c739f;
 
 }
 
 .page {
 	width: 1000px;
-	height: 900px;
 	padding: 11px 0px 0px 0px;
   margin: auto;
   background: #ffffff;
 	border-left: 2px solid #dbdbdb;
 	border-right: 2px solid #dbdbdb;
+	box-shadow: 0 0 10px #000;
 	position: relative;
 }
 
@@ -58,6 +60,10 @@ padding: 0px 40px;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	box-shadow: 0 0 10px #000;
+	border-bottom: 1px solid;
+	position: relative;
+	z-index: 1;
 }
 
 ul {
@@ -79,7 +85,10 @@ ul.menu > li {
 		display: block;
     float: left;
     position: relative;
-		padding: 0 2%;
+		width: 142px;
+		height: 36px;
+		font-size: 12px;
+
 }
 ul.menu > li > a {
     display: block;
@@ -90,15 +99,17 @@ ul.menu > li > a {
 }
 ul.menu > li > a:hover {
     background-color: #343434;
+
 }
 ul.submenu {
     display: none;
     position: absolute;
     width: 120px;
-    top: 37px;
+    top: 36px;
     left: 0;
     background-color: black;
     border: 1px solid #343434;
+		box-shadow: 0 0 10px #000;
 }
 ul.submenu > li {
     display: block;
@@ -106,7 +117,7 @@ ul.submenu > li {
 ul.submenu > li > a {
     display: block;
     padding: 10px;
-    color: white;
+    color: #d6d6d6;
     background-color: #343434;
     text-decoration: none;
 }
@@ -116,4 +127,61 @@ ul.submenu > li > a:hover {
 
 ul.menu > li:hover > ul.submenu {
     display: block;
+}
+
+/*---Content---*/
+
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+
+p {
+	text-align: center;
+	color: #424c43;
+}
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+	color: #424c43;
+}
+
+.info {
+	display: block;
+	padding: 5px;
+	float: left;
+	width: 20%;
+	background: #edeef0;
+	border-right: 1px solid gray;
+	padding-bottom: 10000px;
+	margin-bottom: -10000px;
+}
+
+.news {
+	display: block;
+	padding: 5px;
+	float: right;
+	width: 20%;
+	background: #edeef0;
+	border-left: 1px solid gray;
+	padding-bottom: 10000px;
+	margin-bottom: -10000px;
+}
+
+.content {
+	display: block;
+	width: 58%;
+	float: left;
+	padding-bottom: 10000px;
+	margin-bottom: -10000px;
+}
+
+/*---Footer---*/
+
+.copy {
+	display: block;
+	text-align: center;
+	padding: 15px;
+	color: #edeef0;
 }

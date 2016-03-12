@@ -134,9 +134,6 @@ ul.menu > li:hover > ul.submenu {
 .container {
 	width: 100%;
 	overflow: hidden;
-}
-
-p {
 	text-align: center;
 	color: #424c43;
 }
